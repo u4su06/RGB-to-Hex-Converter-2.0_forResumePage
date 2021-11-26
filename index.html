@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container d-flex flex-column">
+      <div class="row d-inline-flex justify-content-center my-2 ">
+        <div class="rgb rgbR h5 font-weight-bolder">R</div>
+        <div class="slider mx-4">
+          <input type="range" class="custom-range" min="0" max="255" step="1" value="255" id="redRange">
+        </div>
+        <div>
+          <input type="number" name="" maxlength="3" class="text-box rgbR rgbN font-weight-bolder btn btn-danger"
+            min="0" max="255" step="1" value="255">
+        </div>
+      </div>
+      <div class="row d-inline-flex justify-content-center my-2">
+        <div class="rgb rgbG h5 font-weight-bolder">G</div>
+        <div class="slider mx-4">
+          <input type="range" class="custom-range" min="0" max="255" step="1" value="255" id="greenRange">
+        </div>
+        <div>
+          <input type="number" name="" maxlength="3" class="text-box rgbG rgbN font-weight-bolder btn btn-success"
+            min="0" max="255" step="1" value="255">
+        </div>
+      </div>
+      <div class="row  d-inline-flex justify-content-center my-2">
+        <div class="rgb rgbB h5 font-weight-bolder">B</div>
+        <div class="slider mx-4">
+          <input type="range" class="custom-range" min="0" max="255" step="1" value="255" id="blueRange">
+        </div>
+        <div>
+          <input type="number" name="" maxlength="3" class="text-box rgbB rgbN font-weight-bolder btn btn-primary"
+            min="0" max="255" step="1" value="255">
+        </div>
+      </div>
+      <div class="d-inline-flex justify-content-center my-3" id="hexNumber">
+        <span>#ffffff</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
